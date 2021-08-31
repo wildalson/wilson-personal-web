@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+	
+}
+h1{
+	font-family: "Monsterrat", sans-serif;
+	font-size: 1.6rem;
+}
+h2{
+	font-family: "Poppins", sans-serif;
+}
+header a {
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.7rem;
+	font-weight: 500;
+	color: darkgrey;
+	text-decoration: none;
+	
+}
+.nav{
+	background-color: #fff;
+}
+.nav-list{
+	list-style:none;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 10px;
+	margin: 0;
+	width: 100%;
+}
+.nav-list li{
+	display:inline-block;
+	transition: all 0.3s ease-out 0s;
+}
+
+
+.nav-list li a:hover{
+	color: darkseagreen;
+}
+
+
+.container{
+	height: 1000px;
+	/* margin: 50px 10%; */
+}
+.home, .portfolio,.profile,.project2-container, .project-container{
+	margin: 50px 10%;
+}
+
+.pic{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.main{
+	display: flex;
+	background-color:#fff;
+	flex-flow: row wrap;
+	height: 1000px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:300;
+}
+
+.left-aside{
+	flex: 1 1 25%;
+}
+.profile-pic{
+	width: 150px;
+	height:150px;
+	border-radius:50%;
+	display:block;
+	margin: 10px auto;
+}
+
+.right-aside{
+	display:flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+}
+.right-aside .header-intro{
+	flex: 1 1 100%;
+	text-align:center;
+}
+.content-1{
+	flex: 1 1 50%;
+}
+.content-2{
+	flex:1 1 50%;
+}
+.right-aside{
+	flex: 1 1 75%;
+}
+
+.table-details{
+	margin: 5px 10px;
+	padding:5px ;
+	border-spacing: 15px;
+	margin: 0 auto;
+}
+.table-details tr{
+	height: 21px;
+}
+.table-details tr>*:nth-child(2){
+	/* padding-left: 50px; */
+}
+.table-details tr>*:nth-child(1)
+{
+	font-weight: 700;
+	color: dimgray;
+}
+
+.home-buttons{
+	margin: 10px;
+	margin-left: auto;
+	margin-right:40px;
+}
+
+/* DETAILS SECTION*/
+/* BUTTON STYLING*/
+.header-home{
+	display: flex;
+	align-items:center;
+	gap: 1em;
+	
+}
+.header-home h1{
+	display: inline-block;
+}
+.btn-1 {
+	transition: all 0.3s ease;
+	overflow: hidden;
+}
+.btn-1:after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+	-webkit-transform: scale(.1);
+	transform: scale(.1);
+}
+.btn-1:hover {
+	color: #fff;
+}
+.btn-1:hover:after {
+	background: #000;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+.custom-btn {
+	outline: none;
+	width: 170px;
+	height: 40px;
+	padding: 10px 25px;
+	border: 2px solid #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+
+
+
+.portfolio{
+	display:flex;
+	justify-content: flex-start;	
+	flex-flow: row wrap;
+}
+.portfolio div{
+	
+}
+.portfolio >div {
+	width: 340px;
+	height: 65px;
+	background-color: #fff;
+	transition: all 0.3 ease-out 0s; 
+	/* margin: 20px auto; */
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 60px;
+	margin-top:40px;
+}
+.portfolio footer{
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+.portfolio div>div{
+	width: 100px;
+	height: 65px;
+	background-size: 100px 65px;
+	margin: 0 auto;
+	cursor:pointer;
+	background-color: orange;
+}
+.portfolio div>div:hover{
+	filter: brightness(50%);
+}
+.project-1{
+	background-image: url("./images/project1.png");
+}
+.project-1:hover{
+	filter: brightness(50%);
+}
+.project-2{
+	background-image: url("./images/project2.png");
+}
+.project-3{
+	background-image: url("./images/project3.png");
+}
+.project-4{
+	background-image: url("./images/project4.png");
+}
+
+.project-container{
+	position: relative;
+	display:flex;
+	justify-content: space-around;
+	height: 600px;
+	/* margin: 50px 12%; */
+	background-color:#fff;;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+/* Project 2 - 24点游戏*/
+.project2-container{
+	position: relative;
+	display:flex;
+	justify-content: space-between;
+	height: 600px;
+	/* margin: 50px 12%; */
+	background-color:#fff;;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);	
+	gap: 4rem;
+	color: darkgray;
+}
+.leaderboard{
+	flex: 1 1 350px;
+}
+.leaderboard heading{
+	border-radius: 5px;
+	border-bottom: dimgrey;
+}
+.leaderboard .ranking-table{
+	margin: 10px auto;
+	table-layout: fixed;
+	width:80%;
+	height:60%;
+}
+.leaderboard td{
+	height: 10px;
+}
+.leaderboard footer{
+	float:right;
+}
+.btn-hard{
+	margin-right: 40px;
+	margin-left: 15px;
+}
+.btn-reset{
+	margin-left: 15px;
+}
+.game-24{
+	flex: 0 1 500px;
+	display:flex;
+	/* align-items: flex-start; */
+	align-content: flex-start;
+	flex-flow: row wrap;
+	color:darkgrey;
+}
+.game-24 .equation{
+	flex: 5 1 auto;
+	margin: 0 auto;
+}
+.game-24 .equation h2{
+	font-family: "Poppins", sans-serif;
+}
+.header-game{
+	flex: 0 1 100%;
+	display:flex;
+	align-items: center;
+}
+
+.header-game h3{
+	flex: 6 1 auto;
+}
+.header-game h4{
+	flex: 1 1 auto;
+}
+.header-game button{
+	flex: 1 1 auto;
+}
+.header-game input{
+	width: 100px;
+	margin: 0 10px;
+}
+
+.row, .game-operators{
+	flex: 0 1 100%;
+	display:flex;
+	justify-content: space-evenly;
+	margin-top: 40px;	
+}
+.first-row{
+	margin-top: -10px;
+	
+}
+.second-row{
+}
+.numbox{
+	background-color: #80ced6;
+	width:100px;
+	height:100px;
+	border-radius: 5px;
+	flex: 0 1 auto;
+	font-family:  "Monsterrat", sans-serif;
+	font-weight: 900;
+	font-size: 4rem;
+	display:flex;
+	align-items: center;
+	justify-content: center;	
+	color:#d5f4e6;
+	transition: all 0.3s ease-out 0s;
+}
+.numbox:hover{
+	cursor: pointer;
+	background-color: #618685;
+}
+.game-operators{
+	display:flex;
+	flex-flow: row wrap;
+}
+
+.operators{
+	transition: all 0.3s ease-out 0s;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #618685;
+}
+
+
+.operators svg path{
+	fill:#fefbd8;	
+}
+.operators:hover{
+	cursor: pointer;
+	fill:gainsboro;
+}
+.current-state{
+	flex: 1 1 100%;
+	margin-bottom: 20px;
+}
+.current-state .operators{
+	margin: 5px auto;
+}
+
+/**/
+
+
+
+.todolist-v1{
+	flex: 0 1 300px;
+}
+.todolist-v2{
+	flex: 0 1 300px;
+}
+.items-box{
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 60px;
+	border: 1px solid #f1f1f1;
+}
+
+.items-box input{
+	flex: 1 1 40%;
+}
+.items-box p{
+	flex: 3 1 100%;
+	text-align: left;
+}
+
+
+.input-area{
+	flex: 3 1 100%;
+	margin-top: 20px;
+}
+.project-container h3{
+	color:darkgray;
+	font-weight:500;
+	padding-top:20px;
+}
+
+.btn-list{
+	margin-left: 20px;
+}
+.heading-list{
+	text-align:center;
+}
+/*credits to https://codepen.io/martinboykov/pen/jOrEWBr?editors=1100 */
+.btn-start, .btn-create, .btn-custom-1 {
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	letter-spacing: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: darkgrey;
+	transition: 0.3s;
+	border: 1px solid darkgrey;	
+	border-radius: 12px;
+}
+.btn-start:hover,.btn-create:hover{
+	border: 1px solid transparent;
+	/* background: #ec1840 url(https://i.postimg.cc/wBXGXbWN/pixel.png);  */
+	background: #618685;
+	/* transition-delay: 0.5s; */
+	background-size: 60px;
+	animation:  animate 0.8s steps(4) forwards;
+	color:#fff;
+	cursor: pointer;
+}
+@keyframes animate {
+	0% {
+		background-position-y: 0;
+	}
+	100% {
+		background-position-y: -30px;
+	}
+}
+
+
+/*Project 3 */
+.project3-form{
+	
+	width:200px;
+	height:220px;
+	margin: 70px auto 0px;
+	background-color: #eff0f3;
+	border: 1px solid #eff0f3;
+	border-radius: 6px;
+	padding:16px;
+	font-size:14px;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 1.1px; 
+}
+.project3-form *{
+	box-sizing: border-box;
+}
+.project3-form label{
+	display: block;
+	margin-bottom: 7px;
+	text-align: left;
+	font-weight: 700;
+	color: #2a2a2a;
+	
+}
+.project3-form input{
+	display: block;
+	margin-bottom: 10px;
+	padding: 3px 12px;
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid #eff0f3; 
+}
+/* https://www.happyhues.co/palettes/15 */
+.btn3{
+	font-weight: 800;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 2px;
+	color:#0d0d0d;
+	display: block;
+	width:100%;
+	text-align: center;
+	margin-top: 15px;
+	padding: 6px 16px;
+	background-color: #ff8e3c;
+	border-radius: 6px;
+	border: 1px solid #ff8e3c;
+	transition: all 0.3s ease-out 0s;	  
+}
+.btn3:hover{
+	filter:brightness(80%);
+}
+.register{
+	font-size: 0.7rem;
+	color:#2a2a2a;
+}
+
+.register >*:nth-child(2){
+	color: #58a6ff; 
+	cursor: pointer;
+}
+
+
+
+.login-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-group{
+	position: relative;
+}
+.btn-close{
+	position:absolute;
+	right: 0;
+}
+
+
+/** Linkedin Icon**/
+/* .linkedin-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+} */
+.social-media-icons{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+/** User Profile /portfolio/project3/profile **/
+
+
+.profile > label{
+	margin: 20px 0;
+	display:block;	
+}
+.profile textarea{
+	display:block;
+	width: 1000px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.profile .btn-create{
+	width: 100px;
+	margin-right: 20px;
+}
+
+.profile .btn-logout{
+	width: 150px;
+	margin-left: auto;
+	transform: 0.3 All ease-out 0s;
+}
+.profile .btn-logout:hover{
+	background-color: rosybrown;
+}
+
+.profile > p{
+	height:150px;
+}
+
+
+/** Contact me css styles**/
+.flex-container{
+
+}
+.contact-me{
+	background-image: url("images/bg_contact.jpg"); 
+	width: 100%;
+	height:400px;
+	background-size: cover; /* or contain depending on what you want */
+	background-position: center center;
+	background-repeat: no-repeat; 
+	text-align:center;
+	margin:auto;
+	padding:0;
+}
+.contact-info{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	gap: 15rem;
+}
+
+
+.card-info{
+	width: 300px;
+	height:400px;
+	padding:5px;
+}
+.card-info h2{
+	text-align: center;
+}
+.card-info footer{
+	padding: 0 7%;
+	font-family: "Monsterrat", sans-serif;
+}
+.svg-contact{
+	background-size: 100px 100px;
+}
+
+
+
+/**project4**/
+.project4-container{
+	display:flex;
+	justify-content: center;
+}
+.article{
+	width: 680px;
+	padding:10px;
+}
+.title h1{
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-size:2.5rem;
+}
+.sub-title h2{
+	color:gray;
+}
+.author{
+	display: flex;
+	justify-content: space-between;
+}
+.author-details{
+	display:flex;
+	width:200px;
+	align-items: flex-start;
+}
+.author-img{
+
+}
+.social-links{
+	display:flex;
+	justify-content: flex-end;
+}
+.author-info p{
+	font-family: "lora"	, serif;
+	font-size: 0.8rem;
+	margin-left: 10px;
+}
+.tax{
+	margin: 50px 0;
+}
+
+.article-body p{
+	font-family: 'Libre Baskerville', serif;;
+	font-size: 15px;
+	line-height: 40px;
+}

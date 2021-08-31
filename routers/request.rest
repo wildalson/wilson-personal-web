@@ -1,0 +1,158 @@
+
+GET http://localhost:5000/api/checktoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjYwYzJiNGY4YjJiMjNiZDU3MWQ5NiIsImlhdCI6MTYzMDE0NzUwMCwiZXhwIjoxNjMyNzM5NTAwfQ.zMN1lLxvV62kbFiff0iDDvRZpojDl7lMbQqbwSFJ2eA
+
+
+###
+POST http://localhost:5000/api/login
+Content-Type : application/json
+
+{
+	"email": "wilson@gmail.com",
+	"password": "test123"
+}
+
+###
+POST http://localhost:5000/api/login
+Content-Type : application/json
+
+{
+	"email": "paulo@gmail.com",
+	"password": "123456"
+}
+
+###
+GET http://localhost:5000/api/login
+###
+
+
+POST http://localhost:5000/api/register
+Content-Type : application/json
+
+{
+  "nickname": "paulo123",
+  "password": "test123",
+  "email": "test123@gmail.com"
+}
+
+###
+POST http://localhost:5000/api/admin
+Content-Type: application/json
+
+{
+	"nickname": "wilson",
+	"password": "test123",
+	"email": "wilson@gmail.com",
+	"access": "ADMIN"
+}
+
+###
+GET http://localhost:5000/api/admin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjYwYzJiNGY4YjJiMjNiZDU3MWQ5NiIsImFjY2VzcyI6IkFETUlOIiwiaWF0IjoxNjI5ODgzNDM1LCJleHAiOjE2Mzg1MjM0MzV9.r0IBvsv-8REpSk3NlHiQEphhSdyJHjksiTvMesfoNj4
+
+###
+GET http://localhost:5000/api/checkpassword
+Content-Type: application/json
+
+{
+	"email": "wilson@gmail.com",
+	"password":  "test123"
+}
+
+
+###
+
+GET http://localhost:5000/private/
+
+
+###
+GET http://localhost:5000/private/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjYwYzJiNGY4YjJiMjNiZDU3MWQ5NiIsImlhdCI6MTYyOTkwNjI4NSwiZXhwIjoxNjMyNDk4Mjg1fQ.KGLwqpQ-4tl24HPT9qRVWxguNaF6_LNLFcihxbiIQjM
+
+
+###
+
+POST http://localhost:5000/api/decodetoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjYwYzJiNGY4YjJiMjNiZDU3MWQ5NiIsImlhdCI6MTYyOTkwNjU0NSwiZXhwIjoxNjMyNDk4NTQ1fQ.Cr305hGmcneNTO3iL-nf3rr54II_BGqLV1t5Pk3rWEc
+
+###
+
+POST http://localhost:5000/private/token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjYwYzJiNGY4YjJiMjNiZDU3MWQ5NiIsImlhdCI6MTYyOTkwNjU0NSwiZXhwIjoxNjMyNDk4NTQ1fQ.Cr305hGmcneNTO3iL-nf3rr54II_BGqLV1t5Pk3rWEc
+
+###
+GET http://localhost:5000/private/token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjYwYzJiNGY4YjJiMjNiZDU3MWQ5NiIsImlhdCI6MTYyOTkwODI2OCwiZXhwIjoxNjMyNTAwMjY4fQ.-2b90aWMos7VPp230dFGyJRDUJZAuQ_P8fLo2-57rmQ
+
+
+###
+POST http://localhost:5000/api/createpost
+Content-Type: application/json
+
+{
+	"email": "paulo123@gmail.com",
+	"posts": {
+		"title": "title4",
+		"post": "post4"
+	}
+}
+
+###
+GET http://localhost:5000/api/getpost
+Content-Type: application/json
+
+{
+	"email": "paulo123@gmail.com"
+}
+
+###
+
+POST http://localhost:5000/api/deletepost
+Content-Type: application/json
+
+{
+	"email": "paulo123@gmail.com",
+	"postId": "612a4d53208fd45ffb280f23"
+}
+
+###
+
+POST http://localhost:5000/api/createadmin
+Content-Type: application/json
+
+{
+	"nickname": "Wilson",
+	"email": "wilson@gmail.com",
+	"password": "test123",
+	"access": "ADMIN"
+}
+
+###
+GET http://localhost:5000/info/getprofile
+
+###
+POST http://localhost:5000/info/updateprofile
+
+###
+POST http://localhost:5000/info/setpersonalprofile
+Content-Type: application/json
+
+{
+		"_id": 1,
+		"name": "Wilson Co",
+		"age": 28,
+		"location": "Bulacan",
+		"degree": "Vocational",
+		"number": "09952953542",
+		"level": "Junior",
+		"email":"wilsondaitoco@gmail.com"
+}
+
+###
+
+POST http://localhost:5000/info/checkadminpassword
+Content-Type: application/json
+
+{
+	"password": "test123"
+}
